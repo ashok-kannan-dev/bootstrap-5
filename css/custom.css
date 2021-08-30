@@ -1,0 +1,380 @@
+body * {
+    font-family: 'Poppins', sans-serif;
+}
+
+section.banner-section {
+    background-image: url("../images/banner_img.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    padding-top: 210px;
+    height: 970px;
+}
+
+.body_section {
+    margin-top: -200px;
+}
+
+.navbar-nav>li {
+    padding: 0 20px 0 20px;
+    position: relative;
+}
+
+.navbar-nav>li:before {
+    content: "/";
+    position: absolute;
+    right: 0;
+    color: #fff;
+    top: 12px;
+    font-weight: 600;
+    font-size: 13px;
+}
+
+.navbar-nav>li>a {
+    font-weight: 500;
+}
+
+.navbar-nav>li:last-child:before {
+    content: "";
+}
+
+@keyframes sub-menu-hover {
+    0% {
+        opacity: 0;
+        transform: scale(.95)
+    }
+    to {
+        opacity: 1;
+        transform: scale(1)
+    }
+}
+
+li.nav-item.dropdown:hover ul.dropdown-menu {
+    display: block;
+    box-shadow: 0 5px 8px #ccc;
+    width: 400px;
+    left: -120px;
+}
+
+li.nav-item.dropdown ul.dropdown-menu {
+    animation: sub-menu-hover .28s cubic-bezier(.17, .67, .48, 1.76);
+    animation-fill-mode: forwards;
+}
+
+.dropdown-item {
+    white-space: normal;
+}
+
+.dropdown-item img {
+    width: 80px;
+    box-shadow: 0 0 20px 2px #eeebeb;
+    border-radius: 50%;
+    margin-right: 10px;
+    float: left;
+}
+
+@keyframes animate {
+    0% {
+        transform: scaleX(0);
+        transform-origin: left
+    }
+    50% {
+        transform: scaleX(1);
+        transform-origin: left
+    }
+    50.1% {
+        transform: scaleX(1);
+        transform-origin: right
+    }
+    to {
+        transform: scaleX(0);
+        transform-origin: right
+    }
+}
+
+.custom-btn>a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 1rem 1.2rem;
+    height: 44px;
+    width: auto;
+    font-weight: 500;
+    margin-right: 0;
+    border: none;
+    color: #fff;
+    position: relative;
+    overflow: hidden;
+    transition: all .3s ease-in-out;
+    box-shadow: 0 2px 20px 0 #ccc;
+    border-top-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+    background-color: #381520;
+}
+
+.custom-btn>a:hover {
+    transform: translateY(-3px);
+    color: #fff;
+    box-shadow: 0 2px 20px 0 #ccc;
+}
+
+.custom-btn>a:before {
+    left: -50%;
+    height: 155px;
+    width: 50px;
+}
+
+.custom-btn>a:hover:before {
+    left: 120%;
+    opacity: .5s
+}
+
+.custom-btn>a:after {
+    left: -100%;
+    height: 20rem;
+    width: 8rem;
+}
+
+.custom-btn>a:hover:after {
+    left: 200%;
+    opacity: .6
+}
+
+.custom-btn>a:before,
+.custom-btn>a:after,
+.banner_form .custom-btn:before,
+.banner_form .custom-btn:after {
+    background: #fff;
+    content: "";
+    opacity: 0;
+    position: absolute;
+    top: -50px;
+    transform: rotate(35deg);
+    transition: all 3s cubic-bezier(.19, 1, .22, 1);
+}
+
+.custom-btn>a>span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: block;
+    box-sizing: border-box;
+}
+
+.custom-btn>a>span:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: #fff;
+    animation: animate 4s linear infinite;
+}
+
+.custom-btn>a>span:first-child,
+.custom-btn>a>span:nth-child(2),
+.custom-btn>a>span:nth-child(4) {
+    transform: rotate(0deg);
+}
+
+.custom-btn>a>span:nth-child(3) {
+    transform: rotate(180deg);
+}
+
+.navbar-nav .nav-link {
+    font-weight: 600;
+    font-size: 16px;
+    text-shadow: 0 0 1px #fff;
+}
+
+.w-80 {
+    width: 80px;
+}
+
+ul.dropdown-menu {
+    width: 400px;
+}
+
+.dropdown-menu span.nav-item {
+    font-weight: 500;
+}
+
+a.dropdown-item:hover>span.nav-item {
+    color: #8f13fc;
+}
+
+a.dropdown-item>span.nav-item {
+    color: #484848;
+    font-weight: 600;
+}
+
+a.dropdown-item:hover {
+    background-color: transparent;
+}
+
+.dropdown-toggle:after {
+    content: "";
+    border: none;
+}
+
+img.logo {
+    margin-left: 28px !important;
+}
+
+.section-left {
+    padding-left: 80px;
+}
+
+.section-left h1 {
+    color: #fff;
+    text-shadow: 0 8px 7px rgb(0 0 0 / 10%);
+    line-height: 55px;
+}
+
+.banner_form {
+    background-color: #fff;
+    box-shadow: 0 0 30px 2px hsl(0deg 0% 80% / 52%);
+    border-radius: 10px !important;
+    width: 495px;
+    padding: 47px !important;
+}
+
+.banner_form .form-control,
+.banner_form select {
+    background-color: #f5f7fa;
+    height: 54px;
+    font-size: 14px;
+    border-radius: 4px;
+    margin-bottom: 31px !important;
+    border: 1px solid #e8e8e8;
+    color: #6c757d;
+}
+
+span.tooltip-text {
+    font-size: 16px;
+    color: rgb(0 0 0 / 75%);
+}
+
+.quiet-text {
+    position: absolute;
+    top: -210px;
+    right: 30px;
+    width: 280px;
+    background-color: #fff;
+    box-shadow: 0 7px 23px rgb(0 0 0 / 16%);
+    border-radius: 20px;
+    transition: all 0.2s;
+    padding: 21px;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.whatsapp-tooltip {
+    position: relative;
+}
+
+.quiet-text li {
+    font-size: 12px;
+    list-style: none;
+    position: relative;
+    margin-bottom: 5px;
+}
+
+.quiet-text>ul {
+    padding-left: 20px;
+    margin-bottom: 0;
+}
+
+.quiet-text li:before {
+    content: "";
+    background-image: url("../images/right-arrow.png");
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    background-repeat: no-repeat;
+    left: -22px;
+    background-position: center;
+}
+
+.quiet-text:after {
+    content: "";
+    height: 0;
+    width: 0;
+    position: absolute;
+    right: 27px;
+    bottom: -8px;
+    text-align: center;
+    transform: rotate(89deg);
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-bottom: 22px solid #fff;
+}
+
+.whatsapp-tooltip>img:hover+.quiet-text {
+    opacity: 1;
+    visibility: visible;
+}
+
+.subscribe-tooltip .form-check {
+    width: auto;
+    display: inline-block;
+    margin-right: 4px;
+    font-size: 16px;
+}
+
+.subscribe-tooltip {
+    margin-top: 16px;
+    position: relative;
+}
+
+.subscribe-tooltip .form-check label {
+    color: rgb(0 0 0 / 75%);
+}
+
+.subscribe-tooltip>img:hover+.quiet-text {
+    opacity: 1;
+    visibility: visible;
+}
+
+.subscribe-tooltip .quiet-text {
+    top: auto;
+    bottom: 40px;
+    right: 90px;
+}
+
+.subscribe-tooltip .quiet-text ul {
+    text-align: left;
+}
+
+.subscribe-tooltip .quiet-text p {
+    font-size: 13px;
+    margin-bottom: 8px;
+    margin-left: -16px;
+}
+
+.banner_form .custom-btn {
+    width: 100%;
+    display: inline-block;
+    background-color: #381520;
+    color: #fff !important;
+    padding: 14px 0 14px 0;
+    margin-top: 20px;
+    font-size: 17px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+
+.banner_form .custom-btn:before {
+    width: 50px;
+    height: 155px;
+}
+
+.banner_form .custom-btn:after {
+    height: 20rem;
+    width: 8rem;
+}
