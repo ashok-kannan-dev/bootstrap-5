@@ -6,9 +6,9 @@ section.banner-section {
     background-image: url("../images/banner_img.png");
     background-repeat: no-repeat;
     background-position: center;
-    background-size: contain;
+    background-size: cover;
     padding-top: 210px;
-    padding-bottom: 170px;
+    padding-bottom: 70px;
     height: auto;
 }
 
@@ -401,4 +401,148 @@ span.tooltip-text {
     font-weight: 400;
     line-height: 28px;
     letter-spacing: .72px;
+}
+
+.menu_hover a.nav-link:hover:before {
+    width: 61%;
+    transition: all 0.5s;
+}
+
+.menu_hover a.nav-link:before {
+    content: "";
+    width: 0;
+    margin: 0 auto;
+    height: 3px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #fff;
+    transition: all 0.5s;
+}
+
+.m-80 {
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+
+section.content_section_2 {
+    background-color: #fff0f2;
+}
+
+.pt-100 {
+    padding-top: 100px;
+}
+
+.custom-title {
+    width: 70%;
+    margin: 0 auto 40px;
+}
+
+.number {
+    width: 100px;
+    height: 105px;
+    display: inline-block;
+    border-radius: 30px;
+    margin-right: 20px;
+}
+
+.number_text {
+    margin-bottom: 0;
+}
+
+.inner_sec {
+    width: 90px;
+    height: 90px;
+    margin-right: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 30px;
+}
+
+.numbers {
+    margin-bottom: 60px;
+}
+
+.inner_sec>h3 {
+    width: 30px;
+    font-size: 45px;
+    line-height: 30px;
+    font-weight: 600;
+    margin: 0 auto;
+    padding: 33px 0;
+    text-align: center;
+}
+
+.number.one {
+    background-color: #e0fff8;
+}
+
+.number.one>.inner_sec {
+    background-color: #b9ffef;
+}
+
+.number.one>.inner_sec h3 {
+    color: #66cab3;
+}
+
+.number.two {
+    background-color: #f7ffe2;
+}
+
+.number.two>.inner_sec {
+    background-color: #f1ffcb;
+}
+
+.number.two>.inner_sec>h3 {
+    color: #a8ac3a;
+}
+
+.number.three {
+    background-color: #ffeaea;
+}
+
+.number.three>.inner_sec {
+    background-color: #fdd9d9;
+}
+
+.number.three>.inner_sec>h3 {
+    color: #ff7b7b;
+}
+
+.number.four {
+    background-color: #e7ffe8;
+}
+
+.number.four>.inner_sec {
+    background-color: #d1ffd4;
+}
+
+.number.four>.inner_sec>h3 {
+    color: #73cd79;
+}
+
+.number.five>.inner_sec {
+    background-color: #dfddff;
+}
+
+.number.five>.inner_sec>h3 {
+    color: #908dcf;
+}
+
+.number.five {
+    background-color: #edecff;
+}
+
+.number.six>.inner_sec {
+    background-color: #ffd9f7;
+}
+
+.number.six>.inner_sec>h3 {
+    color: #675dc4;
+}
+
+.number.six {
+    background-color: #ffeafb;
 }
